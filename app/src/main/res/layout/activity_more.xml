@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.MoreActivity">
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_frag_more_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:background="@drawable/topmore"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_frag_more_settings_connected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:padding="7dp"
+                            android:background="@color/colorWhite"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/dv_frag_more_avatar"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/background_with_big_border_white"
+                                fresco:placeholderImage="@drawable/ic_avatar_placeholder"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="username:"
+                            android:textColor="@android:color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_frag_more_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="username"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_sign_out"
+                            android:layout_width="120dp"                        android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/signout" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rl_frag_more_settings_disconnected"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="40dp"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Login to access all the features of this app."
+                            android:textColor="@android:color/white"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_settings_signin"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/login" />
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:id="@+id/ll_frag_more_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/white"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Not registered yet ? "
+                                android:textSize="14dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@android:color/white"
+                                android:text="Sign up now."
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_frag_more_forgotpassword"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="10dp"
+                            android:text="Forgot your password?"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="LISTINGS"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGreyFragMore"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_update_database"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_update_database"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_update" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_update_database"
+                            android:text="Load Updated Listings"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C0C0C0" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_submit_a_venue"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_submit_venue"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_venue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_submit_venue"
+                            android:text="Submit A Venue Listing"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C0C0C0" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_submit_an_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_submit_an_event"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_event" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_submit_an_event"
+                            android:text="Submit An Event Listing"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C0C0C0" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_report_mistakes"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_report_mistakes"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_mistake" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_report_mistakes"
+                            android:text="Report A Listing Mistake"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_height="40dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="APP"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_app_feedbacks"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_app_feedbacks"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_feedback" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_app_feedbacks"
+                            android:text="App Feedback"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C0C0C0" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_support"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_support" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_support"
+                            android:text="Support"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_height="40dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="SMARTSHANGHAI"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_contact"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_contact" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_contact"
+                            android:text="Contact"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C0C0C0" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_about_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_about_us"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_about" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_about_us"
+                            android:text="About Us"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#C0C0C0" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_frag_more_advertise_with_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                        android:background="@color/colorGreyFragMore">
+
+                        <ImageView
+                            android:id="@+id/iv_frag_more_advertise_with_us"
+                            android:layout_width="@dimen/frag_more_iv_size"
+                            android:layout_height="@dimen/frag_more_iv_size"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_more_advertise" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                            android:layout_toRightOf="@+id/iv_frag_more_advertise_with_us"
+                            android:text="Advertise With Us"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/frag_more_tv_size"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/frag_more_size_arrows"
+                            android:layout_height="@dimen/frag_more_size_arrows"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                            android:src="@drawable/ic_venue_act_arrow" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</RelativeLayout>

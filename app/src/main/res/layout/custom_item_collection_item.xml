@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_item_collection_item_venue_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="visible">
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_blue_dot" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_collection_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="220dp"
+                        android:singleLine="true"
+                        android:text="Venue name"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_custom_item_collection_item_address_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="address english"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tv_custom_item_collection_address_chinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address chinese"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_custom_item_collection_item_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_custom_item_collection_item_distance"
+                    android:src="@drawable/ic_arrow_blue_collection" />
+
+
+                <TextView
+                    android:id="@+id/tv_custom_item_collection_item_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="123 m"
+                    android:textColor="@color/colorSmartShanghaiBlue"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/dv_custom_item_collection_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGreyFeedFragment"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_custom_item_collection_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="3dp"
+            android:text="description"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_custom_item_collection_item_top_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_custom_item_collection_item_top_page_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorGreyFeedFragment"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_collection_item_top_page_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="name collection"
+                        android:textColor="@android:color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_collection_item_top_page_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="description collection"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_collection_item_top_page_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="date"
+                        android:textColor="@android:color/black"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

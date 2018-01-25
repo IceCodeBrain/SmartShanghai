@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SmSh</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ticket_frame_info">TicketFrameInfo</string>
+
+    <string name="title_activity_show_map_venue_activity">Map</string>
+
+    <string name="fragment_directory_search_hint">search</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="key_webservices_android">9QYQJ3DjuPdGifwvy2CTc2aryZwc3TTEzGz</string>
+
+    <string name="tv_report_activity_explaination">Thanks for helping us keep our listings up-to-date. Please use the form below to report any mistake to our listings manager. We will verify all submisssions and update our listings within 2-3 working days</string>
+    <string name="tv_registered_activity_verification_part_1">We have just send a confirmation email to </string>
+    <string name="tv_registered_activity_verification_part_2">. Please press the verification link to open your account.</string>
+
+    <string name="error_db">You must first load the database,go to "more" and "load update"</string>
+
+    <string name="update_db_act_explaination">This app stores all venue listings directly on your phone so you can access them without an internet connection. Listings update automatically every week when you connect to WiFi. Click below get the latest listings updates.</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="chinese_please_take_me_to">您好，请送我去...</string>
+
+    <string name="tv_first_run_explaination1_middle">Shanghai\'s best venue directory with over 11,000 listings on your phone, available without an intenet connection.</string>
+    <string name="tv_first_run_explaination1_bot">The SmSh app downloads all directory information to your phone when you connect to WiFi, so it\'s always there when you need it.</string>
+    <string name="tv_first_run_explaination2_middle">Get SmartShanghai\'s unique and independent editorial coverage of cultural and social happenings around the city.</string>
+    <string name="tv_first_run_explaination2_bot">All our editorial content is original. We don\'t accept payment for content. Banner ads are labeled as such.</string>
+    <string name="tv_first_run_explaination3_middle">Curated and compiled by our editors, find out the latest event recommendations, art listings, dining promotions, and nightlife parties.</string>
+    <string name="tv_first_run_explaination3_bot">Event listings are updated daily.</string>
+    <string name="tv_first_run_explaination4_middle">When you\'re out and about, search for nearby restaurants, bars, cafes, and places to go next based off your location.</string>
+    <string name="tv_first_run_explaination4_bot">Please allow this app to access your location to make use of this feature.</string>
+
+    <string name="tv_app_feedback_explaination">Find a bug? Got a feature you\'d like to see? Share your SmSh app experience with us by leaving a comment in the form below. We\'d love to hear your suggestions and feedback.</string>
+
+    <string name="tv_ask_update_dialog">A newer, better version of this app is available. Please visit your App store to update it to the latest version.</string>
+
+
+</resources>

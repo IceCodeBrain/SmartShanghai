@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainPage.FragmentFeed">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ProgressBar
+            android:id="@+id/load_frag_ticket"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorSmartShanghaiBlue"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+
+        <ListView
+            android:id="@+id/lv_fragment_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none">
+
+
+        </ListView>
+
+    </RelativeLayout>
+</FrameLayout>

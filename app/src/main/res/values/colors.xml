@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorSmartShanghaiBlue">#00A6DF</color>
+    <color name="colorArtCatOrange">#F97222</color>
+    <color name="greyMainActivityNoSelected">#777777</color>
+    <color name="greyBackgroundArtExhibition">#646464</color>
+    <color name="colorAccent">#F79B1D</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparant">#00000000</color>
+    <color name="colorGreyReviewText">#616163</color>
+    <color name="colorGreyPrice">#A9A8A8</color>
+    <color name="colorBlackPrice">#000000</color>
+    <color name="colorGreyBackgroundInfoVenue">#E6E7E7</color>
+    <color name="colorGreyFeedFragment">#DEDEDF</color>
+    <color name="colorRedFeedFragment">#C3272F</color>
+    <color name="colorGreenBookmark">#16A24A</color>
+    <color name="colorGreyFeedBookmark">#AEAEAF</color>
+    <color name="colorWhiteFeed">#FFFFFF</color>
+    <color name="colorGreyFragMore">#DDDDDD</color>
+    <color name="colorWhiteTransparent">#50FFFFFF</color>
+    <color name="colorgreenReviewFeed">#819535</color>
+    <color name="colorRedClosedList">#90FF0000</color>
+    <color name="colorRedClosed">#FF0000</color>
+    <color name="colorYellowStars">#F79A06</color>
+    <color name="greenVenueCose">#22B573</color>
+    <color name="blackTransparent">#70000000</color>
+    <color name="orangeJobs">#F25200</color>
+
+
+
+
+</resources>

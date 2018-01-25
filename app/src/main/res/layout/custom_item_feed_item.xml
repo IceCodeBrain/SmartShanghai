@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_article_id_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_border"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_feed_custom_item_article_id_1_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_logos_01" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_article_id_1_logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SmartShanghai"
+                            android:textColor="@color/colorSmartShanghaiBlue"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="has posted a "
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="new wire"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fragment_feed_margin_top_time_ago">
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_article_id_1_time_ago"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="time ago"
+                            android:textColor="@color/colorGreyFeedBookmark"
+                            android:textSize="@dimen/tv_feed_item_time_ago"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_feed_item_time_ago"
+                            android:layout_height="@dimen/iv_feed_item_time_ago"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_article_id_1_time_ago"
+                            android:src="@drawable/ic_feedicons_04" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_1_image_article"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorGreyFeedFragment"
+                        android:cropToPadding="true" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_fragment_feed_custom_item_id_1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="name of article"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_feed_custom_item_id_1_description_meta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="description description  description  description  description  description "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/tv_frag_feed_custom_item_description" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorGreyFeedFragment" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_feed_item_bottom_bar"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_1_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_1_share"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_feed_item_right_image"
+                        android:src="@drawable/ic_feedicons_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_1_share"
+                        android:text="Share"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_1_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_1_bookmark"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_feedicons_03" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_feed_item_id_1_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_1_bookmark"
+                        android:text="Bookmark"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_ticket_id_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_border"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_feed_custom_item_article_id_2_logo"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tickets_logo_01" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_article_id_2_logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SmartTicket"
+                            android:textColor="@color/colorRedFeedFragment"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="has added a "
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="new show"
+                                android:textColor="@color/colorRedFeedFragment"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fragment_feed_margin_top_time_ago">
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_ticket_id_2_time_ago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="time ago"
+                            android:textColor="@color/colorGreyFeedBookmark"
+                            android:textSize="@dimen/tv_feed_item_time_ago"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_feed_item_time_ago"
+                            android:layout_height="@dimen/iv_feed_item_time_ago"
+                            android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_ticket_id_2_time_ago"
+                            android:src="@drawable/ic_feedicons_04" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorGreyFeedFragment"
+                        android:cropToPadding="true" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Title"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_2_description_meta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="description description description "
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/tv_frag_feed_custom_item_description" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_fragment_feed_custom_item_id_2_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_feed_time" />
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_2_date_meta2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_id_2_time"
+                            android:text="july"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_fragment_feed_custom_item_id_2_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_feed_location" />
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_2_place_meta3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_id_2_place"
+                            android:text="Myst"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_2_buy_tickets"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorRedFeedFragment"
+                        android:gravity="center"
+                        android:text="BUY TICKETS"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_2_all_shows"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/greyMainActivityNoSelected"
+                        android:gravity="center"
+                        android:text="ALL SHOWS"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorGreyFeedFragment" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_feed_item_bottom_bar"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_2_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_2_share"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_feed_item_right_image"
+                        android:src="@drawable/ic_feedicons_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_2_share"
+                        android:text="Share"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_2_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_2_bookmark"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_feedicons_03" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_feed_item_id_2_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_2_bookmark"
+                        android:text="Bookmark"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_venue_user_quote_id_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_border"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_feed_custom_item_review_id_3_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_image_review_feed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_review_id_3_logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_3_top_meta1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 users"
+                            android:textColor="@color/colorgreenReviewFeed"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="posted "
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="new reviews"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fragment_feed_margin_top_time_ago">
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_review_id_3_time_ago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="time ago"
+                            android:textColor="@color/colorGreyFeedBookmark"
+                            android:textSize="@dimen/tv_feed_item_time_ago"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_feed_item_time_ago"
+                            android:layout_height="@dimen/iv_feed_item_time_ago"
+                            android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_review_id_3_time_ago"
+                            android:src="@drawable/ic_feedicons_04" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorGreyFeedFragment" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_feed_custom_item_id_3_review1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_3_venue_img_meta_2"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_fragment_feed_custom_item_id_3_venue_name_meta_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="10dp"
+                                android:maxWidth="130dp"
+                                android:singleLine="true"
+                                android:text="venue name venue name venue name"
+                                android:textColor="@color/colorSmartShanghaiBlue"
+                                android:textSize="15dp" />
+
+
+                            <RatingBar
+                                android:id="@+id/rb_fragment_feed_custom_item_id_3_venue1_meta4"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:stepSize="0.1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/tv_fragment_feed_custom_item_id_3_review_venue1_meta5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="review review review review "
+                                android:textColor="@android:color/black"
+                                android:textSize="19dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorGreyFeedFragment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_feed_custom_item_id_3_review2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_fragment_feed_custom_item_id_3_venue2_img_meta_6"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:background="@color/colorGreyFeedFragment" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_3_venue2_name_meta_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="venue name"
+                            android:textColor="@color/colorSmartShanghaiBlue"
+                            android:textSize="15dp" />
+
+
+                        <RatingBar
+                            android:id="@+id/rb_fragment_feed_custom_item_id_3_venue2_meta8"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_3_review_venue2_meta9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:maxLines="2"
+                            android:text="review review review review "
+                            android:textColor="@android:color/black"
+                            android:textSize="19dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorGreyFeedFragment" />
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_feed_custom_item_id_3_review3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_fragment_feed_custom_item_id_3_venue3_img_meta_10"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:background="@color/colorGreyFeedFragment" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_3_venue3_name_meta_11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="venue name"
+                            android:textColor="@color/colorSmartShanghaiBlue"
+                            android:textSize="15dp" />
+
+
+                        <RatingBar
+                            android:id="@+id/rb_fragment_feed_custom_item_id_3_venue3_meta12"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_fragment_feed_custom_item_id_3_review_venue3_meta13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:maxLines="2"
+                            android:text="review review review review "
+                            android:textColor="@android:color/black"
+                            android:textSize="19dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/but_fragment_feed_custom_item_id_3_all_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"
+                    android:text="ALL REVIEWS"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_party_pix_id_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_border"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fragment_feed_custom_item_party_pix_id_4_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_newgallery" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_party_pix_id_4_logo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SmartShanghai"
+                        android:textColor="@color/colorSmartShanghaiBlue"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="has a "
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="new gallery"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_feed_margin_top_time_ago">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_party_pix_id_4_time_ago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="time ago"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_time_ago"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_feed_item_time_ago"
+                        android:layout_height="@dimen/iv_feed_item_time_ago"
+                        android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_party_pix_id_4_time_ago"
+                        android:src="@drawable/ic_feedicons_04" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture7"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture8"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/dv_fragment_feed_custom_item_id_4_picture9"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_feed_height_pictures_id_4_gallery"
+                        android:layout_margin="@dimen/fragment_feed_margin_pictures_id_4_gallery"
+                        android:cropToPadding="true"
+                        android:background="@color/colorGreyFeedFragment" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fragment_feed_custom_item_id_4_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="title @ venue name"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorGreyFeedFragment" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_feed_item_bottom_bar"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_4_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_4_share"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_feed_item_right_image"
+                        android:src="@drawable/ic_feedicons_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_4_share"
+                        android:text="Share"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_4_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_4_bookmark"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_feedicons_03" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_feed_item_id_4_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_4_bookmark"
+                        android:text="Bookmark"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_collection_id_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_border"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fragment_feed_custom_item_collection_id_5_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logos_01" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_collection_id_5_logo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SmartShanghai"
+                        android:textColor="@color/colorSmartShanghaiBlue"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="has a "
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="new collection"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_feed_margin_top_time_ago">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_collection_id_5_time_ago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="time ago"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_time_ago"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_feed_item_time_ago"
+                        android:layout_height="@dimen/iv_feed_item_time_ago"
+                        android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_collection_id_5_time_ago"
+                        android:src="@drawable/ic_feedicons_04" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_fragment_feed_custom_item_id_5_image_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:cropToPadding="true"
+                    android:background="@color/colorGreyFeedFragment" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/gradient">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_5_colletion_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="title"
+                        android:textColor="@android:color/white"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_5_colletion_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_fragment_feed_custom_item_id_5_colletion_title"
+                        android:text="title"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorGreyFeedFragment" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_feed_item_bottom_bar"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_5_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_5_share"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_feed_item_right_image"
+                        android:src="@drawable/ic_feedicons_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_5_share"
+                        android:text="Share"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_5_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_5_bookmark"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_feedicons_03" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_feed_item_id_5_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_5_bookmark"
+                        android:text="Bookmark"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_ad_id_6"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorGreyFeedFragment"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_fragment_feed_custom_item_id_6_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="ADVERTISEMENT"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_fragment_feed_custom_item_id_6_advertisement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fresco:actualImageScaleType="fitCenter"
+                    android:background="@color/colorGreyFeedFragment" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_radar_id_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_fragment_feed_custom_item_id_7_top_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Now Open"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/tv_frag_feed_custom_item_top_item" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_fragment_feed_custom_item_id_7_top_tv" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_feed_custom_item_id_7_published_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text="2 days ago"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/tv_frag_feed_custom_item_top_item" />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_id_7_published_time" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/darker_gray">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_fragment_feed_custom_item_id_7_image_radar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cropToPadding="true"
+                    android:background="@color/colorGreyFeedFragment" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_7_radar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_fragment_feed_custom_item_id_7_colletion_meta1"
+                        android:layout_marginBottom="5dp"
+                        android:text="Title"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_7_colletion_meta1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="Shanghai's first ..."
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_feed_custom_item_collection_event_id_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_border"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fragment_feed_custom_item_collection_event_id_7_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logos_01" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_fragment_feed_custom_item_collection_event_id_7_logo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SmartShanghai"
+                        android:textColor="@color/colorSmartShanghaiBlue"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="added a "
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="new event collection"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_feed_margin_top_time_ago">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_collection_event_id_7_time_ago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="time ago"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_time_ago"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_feed_item_time_ago"
+                        android:layout_height="@dimen/iv_feed_item_time_ago"
+                        android:layout_toLeftOf="@+id/tv_fragment_feed_custom_item_collection_event_id_7_time_ago"
+                        android:src="@drawable/ic_feedicons_04" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/dv_fragment_feed_custom_item_id_7_image_collection_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:cropToPadding="true"
+                    android:background="@color/colorGreyFeedFragment" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/gradient">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_7_colletion_event_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="title"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_feed_custom_item_id_7_colletion_event_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_fragment_feed_custom_item_id_7_colletion_event_title"
+                        android:text="title"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorGreyFeedFragment" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_feed_item_bottom_bar"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_7_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_7_share"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_feed_item_right_image"
+                        android:src="@drawable/ic_feedicons_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_7_share"
+                        android:text="Share"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_custom_item_feed_item_id_7_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/margin_feed_item_bottom_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_custom_item_feed_item_id_7_bookmark"
+                        android:layout_width="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_height="@dimen/iv_feed_item_bottom_bar"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_feedicons_03" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_item_feed_item_id_7_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_custom_item_feed_item_id_7_bookmark"
+                        android:text="Bookmark"
+                        android:textColor="@color/colorGreyFeedBookmark"
+                        android:textSize="@dimen/tv_feed_item_bottom_bar"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

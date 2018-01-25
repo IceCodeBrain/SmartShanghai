@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_events_today_size_text_days">16dp</dimen>
+    <dimen name="frag_directory_size_relative_layouts">90dp</dimen>
+    <dimen name="frag_directory_size_tv">24dp</dimen>
+    <dimen name="frag_directory_margin_right_tv">34dp</dimen>
+    <dimen name="frag_directory_size_tv_bot_categories">17dp</dimen>
+    <dimen name="frag_directory_size_iv_categories">30dp</dimen>
+    <dimen name="frag_directory_size_iv_categories_arrow">20dp</dimen>
+    <dimen name="frag_directory_size_margin_right_categories">20dp</dimen>
+    <dimen name="frag_directory_margin_size_bot_categories">15dp</dimen>
+
+    <dimen name="frag_more_relative_layout_category_size">70dp</dimen>
+    <dimen name="frag_more_relative_layout_separator_size">30dp</dimen>
+    <dimen name="frag_more_margin_tv_right">15dp</dimen>
+    <dimen name="frag_more_margin_iv_right">15dp</dimen>
+    <dimen name="frag_more_iv_size">25dp</dimen>
+
+    <dimen name="frag_essentials_iv_size">35dp</dimen>
+    <dimen name="frag_more_tv_size">18dp</dimen>
+    <dimen name="frag_essentials_separator_margin">65dp</dimen>
+
+    <dimen name="custom_item_venue_star_size">15dp</dimen>
+
+    <dimen name="tv_frag_feed_custom_item_top_item">15dp</dimen>
+    <dimen name="tv_frag_feed_custom_item_description">15dp</dimen>
+
+    <dimen name="tv_custom_review_ratings">9dp</dimen>
+    <dimen name="tv_custom_review_margin_top">5dp</dimen>
+    <dimen name="tv_custom_review_padding_right">5dp</dimen>
+
+    <dimen name="iv_size_activity_venue">30dp</dimen>
+    <dimen name="margin_to_right_activity_venue">15dp</dimen>
+
+    <dimen name="fragment_feed_height_pictures_id_4_gallery">80dp</dimen>
+    <dimen name="fragment_feed_margin_pictures_id_4_gallery">2.5dp</dimen>
+
+
+    <dimen name="tv_size_venue_activity_infos">15dp</dimen>
+
+    <dimen name="fragment_feed_margin_top_time_ago">11dp</dimen>
+
+    <dimen name="tv_feed_item_time_ago">12dp</dimen>
+    <dimen name="iv_feed_item_time_ago">17dp</dimen>
+
+    <dimen name="tv_feed_item_bottom_bar">12dp</dimen>
+    <dimen name="iv_feed_item_bottom_bar">15dp</dimen>
+    <dimen name="rl_feed_item_bottom_bar">40dp</dimen>
+    <dimen name="margin_feed_item_bottom_bar">10dp</dimen>
+    <dimen name="margin_feed_item_right_image">2dp</dimen>
+
+    <dimen name="main_activity_size_text_frag">9dp</dimen>
+    <dimen name="main_activity_padding_img">2dp</dimen>
+
+
+    <dimen name="venue_act_size_iv_fav">21dp</dimen>
+
+    <dimen name="frag_more_size_arrows">20dp</dimen>
+    <dimen name="act_venue_size_arrows">20dp</dimen>
+
+
+    <dimen name="size_margin_review_act">10dp</dimen>
+
+    <dimen name="size_indicator_first_run">7dp</dimen>
+    <dimen name="margin_indicator_first_run">5dp</dimen>
+
+    <dimen name="essentials_activity_height_of_layouts">210dp</dimen>
+
+
+</resources>

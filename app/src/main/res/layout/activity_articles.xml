@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_articles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyFeedFragment"
+
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.ArticlesActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_article_activity_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorSmartShanghaiBlue">
+
+        <TextView
+            android:id="@+id/tv_article_activity_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Essentials"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/loadbar_article_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorSmartShanghaiBlue" />
+
+
+    <ListView
+        android:layout_below="@+id/rl_article_activity_top_bar"
+        android:id="@+id/lv_article_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorTransparant"
+        android:dividerHeight="15dp"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+</RelativeLayout>

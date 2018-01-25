@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_essentials"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.EssentialsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_essentials_activity_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorSmartShanghaiBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Essentials"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_essentials_activity_top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_essentials_activity_how_to"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/essentials_activity_height_of_layouts"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/howto"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_act_essential_title_how_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="How to"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_act_essential_title_how_to"
+                    android:text="Handy guides on getting your stuff sorted out in the city"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_essentials_activity_tested"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/essentials_activity_height_of_layouts"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tested"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_act_essential_title_tested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Tested"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick reviews of things that have the potential of greatly improve your standard of living"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp"
+                    android:layout_below="@+id/tv_act_essential_title_tested"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_essentials_activity_activities"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/essentials_activity_height_of_layouts"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/activities"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_act_essential_title_activities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Activities"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tv_act_essential_title_activities"
+                    android:text="All about getting out there and getting active in Shanghai"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_essentials_activity_outbound"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/essentials_activity_height_of_layouts"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/outoftown"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_act_essential_title_outbounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Outbound"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tv_act_essential_title_outbounds"
+                    android:text="Handy guides on getting your stuff sorted out in the city"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_essentials_activity_communities"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/essentials_activity_height_of_layouts"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/communities"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_act_essential_title_communities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Communities"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/tv_act_essential_title_communities"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Connecting you with your fellow Shanghaier with expat group profiles and event recommendations"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

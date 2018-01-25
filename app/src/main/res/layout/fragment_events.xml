@@ -1,0 +1,292 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainPage.FragmentFeed">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_button_what_today"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/today"
+                    android:onClick="onClickWhatToday">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="What's On Today"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_nightlife"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nightlifeevent"
+                    android:onClick="onClickNightLife">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Nightlife"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_button_art_exhibition"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/artevent"
+                    android:onClick="onClickBrunchDeals">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Art Exhibitions"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_happy_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/happyhours"
+                    android:onClick="onClickLunchDeals">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Happy Hours"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_button_live_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/livemusic"
+                    android:onClick="onClickLadiesNight">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Live Music"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_markets"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/market"
+                    android:onClick="onClickHappyHours">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Markets"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_button_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/networking"
+                    android:onClick="onClickDinnerDeals">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Community"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_ladies_night"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ladies"
+                    android:onClick="onClickTravelerDeals">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Ladies' Nights"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_brunch_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/brunch">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Brunch Deals"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_lunch_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lunch"
+                    android:onClick="onClickArts">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Lunch Deals"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_event_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sport"
+                    android:onClick="onClickSports">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Sports and Recreation"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_stage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stage"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Stage"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</FrameLayout>

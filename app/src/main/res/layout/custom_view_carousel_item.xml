@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/dv_custom_view_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:cropToPadding="true"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        android:layout_height="300dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_custom_view_carousel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="-5dp"
+            android:text="title collection"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_custom_view_carousel_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="subtitle collection"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

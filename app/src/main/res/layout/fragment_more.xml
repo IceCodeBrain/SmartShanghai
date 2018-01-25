@@ -1,0 +1,420 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainPage.FragmentFeed">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_more_essentials_essentials"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/essentials">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Essentials"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_more_housing"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:visibility="visible"
+                    android:background="@drawable/housing">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Housing"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_more_jobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/jobs">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Jobs"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_more_buyandsell"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_directory_size_relative_layouts"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/buyandsell">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_directory_margin_right_tv"
+                        android:text="Buy and Sell"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/frag_directory_size_tv" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_emergencies"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_emergencies"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_emergencies" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_emergencies"
+                        android:text="Emergencies"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/frag_essentials_separator_margin"
+                    android:background="#C0C0C0" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_public_holidays"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_public_holidays"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_holidays" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_public_holidays"
+                        android:text="Public Holidays"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/frag_essentials_separator_margin"
+                    android:background="#C0C0C0" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_consulates"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_consulates"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_consulates" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_consulates"
+                        android:text="Consulates"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/frag_essentials_separator_margin"
+                    android:background="#C0C0C0" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_travel_basics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_travel_basics"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_travel_basics" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_travel_basics"
+                        android:text="Travel Basics"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/frag_essentials_separator_margin"
+                    android:background="#C0C0C0" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_beginner_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_beginner_guide"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_beginner_guide" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_beginner_guide"
+                        android:text="Beginner's Guide"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/frag_essentials_separator_margin"
+                    android:background="#C0C0C0" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_hospitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_hospitals"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_hospitals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_hospitals"
+                        android:text="Hospitals"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/frag_essentials_separator_margin"
+                    android:background="#C0C0C0" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_frag_essentials_veterinarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frag_more_relative_layout_category_size"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/iv_frag_essentials_veterinarian"
+                        android:layout_width="@dimen/frag_essentials_iv_size"
+                        android:layout_height="@dimen/frag_essentials_iv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/essentials_veterinarian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/frag_more_margin_tv_right"
+                        android:layout_toRightOf="@+id/iv_frag_essentials_veterinarian"
+                        android:text="Veterinarian"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/frag_more_tv_size"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/frag_more_size_arrows"
+                        android:layout_height="@dimen/frag_more_size_arrows"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/frag_more_margin_iv_right"
+                        android:src="@drawable/ic_venue_act_arrow" />
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

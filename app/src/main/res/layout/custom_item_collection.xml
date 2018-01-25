@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/dv_custom_collection"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:cropToPadding="true"
+        android:background="@color/colorGreyFeedFragment"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/gradient">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/tv_custom_disp_name_of_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name of collection collection"
+            android:textColor="@android:color/white"
+            android:maxLines="2"
+            android:lineSpacingExtra="-6dp"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_custom_disp_subname_of_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_custom_disp_name_of_collection"
+            android:text="subtitle"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

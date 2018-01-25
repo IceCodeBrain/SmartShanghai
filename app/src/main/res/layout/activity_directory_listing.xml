@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical"
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.DirectoryListing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorSmartShanghaiBlue">
+
+        <TextView
+            android:id="@+id/tv_directory_listing_name_categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="CATEGORIE"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/but_directory_listing_open_map_baidu"
+            android:layout_width="80dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_mapicon_01" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rl_spin_directory_listing_activity"
+    android:layout_width="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_height="60dp">
+
+
+
+    <Spinner
+        android:id="@+id/spin_directory_listing_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#3D3D3D"
+        android:textAlignment="center">
+
+
+    </Spinner>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_arrow_spinner"
+        android:layout_marginRight="50dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#3D3D3D" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_directory_listing_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="#DDDDDD"
+            android:dividerHeight="10dp"
+            android:scrollbars="none">
+
+
+        </ListView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_directory_listing_empty_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_fav_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Your favorites are empty"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".FragmentListOfDayEvent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/prog_bar_today_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorSmartShanghaiBlue"
+            android:visibility="visible"
+            android:layout_centerInParent="true"/>
+
+        <ListView
+            android:id="@+id/lv_fragment_today_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_list_of_event_top_bar"
+            android:background="@color/colorWhite"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none">>
+
+        </ListView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_list_of_event_per_day_error_no_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_event_error"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorSmartShanghaiBlue"
+                android:text="No events available"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

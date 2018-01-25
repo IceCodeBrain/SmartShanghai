@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_buy_and_sell"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGreyFeedFragment"
+    android:layout_height="match_parent"
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.BuyAndSellActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_spin_directory_listing_activity"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+
+
+        <Spinner
+            android:id="@+id/spin_buy_and_sell_act_cat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorSmartShanghaiBlue"
+            android:textAlignment="center">
+
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_spinner"
+            android:layout_marginRight="50dp"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:id="@+id/loadbar_buy_and_sell"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorSmartShanghaiBlue" />
+
+
+    <ListView
+        android:id="@+id/lv_buy_and_sell_activity"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:divider="@color/colorTransparant"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

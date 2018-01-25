@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartshanghaiapp.smartshanghaicompany.smartshanghai">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="eVUWRBk5FxN4i3FrBMtzWGLgU8P4eKXA" />
+
+        <activity
+            android:name=".MainPage.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TicketFrameInfo"
+            android:label="@string/title_activity_ticket_frame_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListOfEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OnlineFrameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventTodayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DirectoryListing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateDatabaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VenuePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JobsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoogleMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListOfCollections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReviewingVenueActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FullScreenPictureActivity" />
+        <activity
+            android:name=".CollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BaiduMapVenuesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChainsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BookmarksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportMistakesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CuisinineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReviewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaxiPrintoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BaiduMapOneVenueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoogleMapActivityOneVenue"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegisteredActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fa91aae9f7834af284a23101c8ec46dc5a8adaa0" />
+
+        <activity
+            android:name=".ReviewingVenueActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstRunActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AskSignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecentlyOpenedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RequestUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MoreListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EssentialsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ArticlesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BuyAndSellActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

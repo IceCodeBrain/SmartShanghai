@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorSmartShanghaiBlue"
+    android:layout_height="55dp">
+
+
+    <TextView
+        android:id="@+id/tv_custom_spinner_buy_and_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

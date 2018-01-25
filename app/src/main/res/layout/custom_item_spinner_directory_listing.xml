@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#3D3D3D"
+    android:layout_height="50dp">
+
+    <View
+        android:id="@+id/sep_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_choose_frag_bar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_custom_spinner_directory_listing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

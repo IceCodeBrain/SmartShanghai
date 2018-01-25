@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ReviewingVenueActivity1">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_reviewing_activity_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Post a new review: "
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_reviewing_activity_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textColor="@color/colorSmartShanghaiBlue"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_reviewing_activity_venue_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_reviewing_activity_username"
+                    android:layout_marginTop="10dp"
+                    android:text="Venue name"
+                    android:textColor="@color/colorSmartShanghaiBlue"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overall rating : "
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_reviewing_activity_rate_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/colorYellowStars"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/5"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/rb_activity_review_venues_total_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:stepSize="1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Review Title"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/et_activity_review_review_quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_with_border"
+                    android:hint="Well worth the money, good for..."
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Rate with stars: "
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Value for money"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_value"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:stepSize="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="The food"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_food"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stepSize="1"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="The drinks"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_drinks"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:stepSize="1"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="The service"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_service"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:stepSize="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Atmosphere"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_atmosphere"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:stepSize="1"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Good for: "
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="A date"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_date"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:stepSize="1"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="With family"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_family"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:stepSize="1"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Business dinner"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_business"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stepSize="1"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_margin_review_act"
+                    android:layout_marginTop="@dimen/size_margin_review_act">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="With friends"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/rb_reviewing_activity_2_friends"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:stepSize="1"
+                        android:layout_centerVertical="true"
+                        android:isIndicator="false"
+                        android:numStars="5" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="25dp"
+                    android:background="#F6F6F6"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Write your review"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:padding="10dp"
+                        android:id="@+id/et_activity_review_review_text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="start"
+                        android:background="@drawable/background_with_border"
+                        android:hint="review text"
+                        android:layout_marginBottom="25dp"
+                        android:textColorHint="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/but_reviewing_venue_activity_next_2"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorWhite"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_with_radius_blue"
+                        android:text="Send"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_reviewing_activity_loading"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@color/blackTransparent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorSmartShanghaiBlue" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="5">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/dv_directory_listing_custom_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparant"
+                fresco:placeholderImage="@drawable/ic_placeholder_venue" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_directory_listing_custom_item_closed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorRedClosedList"
+                android:padding="7dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="This venue has closed"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_directory_listing_venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxLines="2"
+                android:text="Venue Name"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<RatingBar-->
+                    <!--android:id="@+id/rb_custom_item_venue_rate_of_venue"-->
+                    <!--style="?android:attr/ratingBarStyleSmall"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:isIndicator="true"-->
+                    <!--android:numStars="5"-->
+                    <!--android:stepSize="0.1" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_custom_item_venue_number_of_review"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="24 reviews"-->
+                    <!--android:textSize="10dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/tv_directory_listing_address_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:maxLines="2"
+                android:text="Address short"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/ll_custom_item_venue_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_directory_listing_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/colorGreyPrice"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_directory_listing_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/colorGreyPrice"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_directory_listing_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/colorGreyPrice"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_directory_listing_price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/colorGreyPrice"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_directory_listing_price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/colorGreyPrice"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_directory_listing_distance_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_directory_listing_location"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/tv_directory_listing_distance"
+                    android:src="@drawable/ic_arrow_blue_collection" />
+
+
+                <TextView
+                    android:id="@+id/tv_directory_listing_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:text="dist"
+                    android:textColor="@color/colorSmartShanghaiBlue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/dv_directory_listing_custom_item_ad"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorGreyFeedFragment"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        fresco:actualImageScaleType="fitCenter" />
+
+
+</LinearLayout>

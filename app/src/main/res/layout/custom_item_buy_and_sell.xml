@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/dv_custom_buy_and_sell_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGreyFeedFragment"
+                android:cropToPadding="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_custom_item_buy_and_sell_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:text="name of article"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_custom_item_buy_and_sell_time_ago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="time ago"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_custom_item_buy_and_sell_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:text="price"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorSmartShanghaiBlue"
+                android:textSize="13dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

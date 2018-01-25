@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.CollectionActivity">
+
+    <ProgressBar
+        android:id="@+id/load_collection_activity"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorSmartShanghaiBlue" />
+
+
+    <ListView
+        android:id="@+id/lv_collection_activity_collection"
+        android:layout_width="match_parent"
+        android:divider="@color/colorTransparant"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</RelativeLayout>

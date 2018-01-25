@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Are you happy with our app ?"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_choose_frag_bar"
+        android:background="#CABBBBBB" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_dialog_yes"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorGreyFeedFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Yes, rate our app"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_choose_frag_bar"
+        android:background="#CABBBBBB" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_dialog_no"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorGreyFeedFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No, send feedback"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_choose_frag_bar"
+        android:background="#CABBBBBB" />
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_dialog_dont_ask_again"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorGreyFeedFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Don't ask me again"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

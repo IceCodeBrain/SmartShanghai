@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shview"
+    android:orientation="vertical"
+    tools:context="com.smartshanghaiapp.smartshanghaicompany.smartshanghai.UpdateDatabaseActivity">
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logosmshdldb" />
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:text="@string/update_db_act_explaination"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/but_update_activity_update_databasse"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_with_radius_blue"
+        android:text="UPDATE DATABASE" />
+
+    <Button
+        android:id="@+id/but_update_activity_cancel"
+        android:textColor="@color/colorWhite"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_with_radius_blue"
+        android:text="Cancel" />
+
+
+</LinearLayout>
